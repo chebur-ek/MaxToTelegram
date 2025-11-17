@@ -6,8 +6,8 @@ import io
 
 app = Flask(__name__)
 
-TELEGRAM_BOT_TOKEN = "7375275750:AAGSzNQ4rPkKD1jb1HoOVi2g5pCiDvj_6EY"
-TELEGRAM_CHAT_ID = "-1002292466397"
+TELEGRAM_BOT_TOKEN = "YourTgBotApi"
+TELEGRAM_CHAT_ID = "Your chat id"
 
 def parse_webhook(data):
     """Парсит данные от Green API"""
@@ -240,4 +240,5 @@ def webhook_handler():
 if __name__ == '__main__':
     print("🚀 Вебхук сервер запущен")
     print("📱 Картинки скачиваются и отправляются в Telegram")
+
     app.run(host='0.0.0.0', port=5000, debug=False)
